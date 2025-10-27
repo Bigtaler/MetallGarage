@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>
+      .product-image img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -191,6 +194,29 @@
     </div>
 
     <div class="row g-4">
+      <!-- Новый товар: Гараж дачный 6х4 м -->
+      <div class="col-lg-4 col-md-6">
+        <div class="product-card h-100">
+          <div class="product-image">
+            <img src="garage-6x4.jpg" alt="Гараж дачный 6х4 м">
+          </div>
+          <div class="product-body">
+            <h4>Гараж дачный 6×4 м</h4>
+            <div class="product-specs">
+              <div class="spec"><i class="fas fa-tools"></i><span>Каркас стен: профиль стальной 40×40×2 мм, грунтованный</span></div>
+              <div class="spec"><i class="fas fa-layer-group"></i><span>Зашивка стен: профнастил П‑20; 0,45 мм, оцинкованный</span></div>
+              <div class="spec"><i class="fas fa-border-top-left"></i><span>Каркас перекрытия: профиль стальной 40×40×2 мм, грунтованный</span></div>
+              <div class="spec"><i class="fas fa-grip-lines"></i><span>Зашивка перекрытия: профнастил С35‑845; 0,45 мм, оцинкованный</span></div>
+              <div class="spec"><i class="fas fa-door-open"></i><span>Ворота: распашные с замком и засовами, профнастил С‑20; 0,45 мм, оцинкованный</span></div>
+            </div>
+            <div class="product-price">7 500 руб.</div>
+            <button class="btn btn-primary w-100" data-product="Гараж дачный 6×4 м" data-bs-toggle="modal" data-bs-target="#priceModal">
+              <i class="fas fa-calculator me-2"></i>Узнать стоимость
+            </button>
+          </div>
+        </div>
+      </div>
+
       <div class="col-lg-4 col-md-6">
         <div class="product-card h-100">
           <div class="product-image"></div>
@@ -250,6 +276,7 @@
     </div>
   </div>
 </section>
+<!-- Остальной код без изменений ниже -->
 <section id="about" class="py-5">
         <div class="container">
             <div class="row align-items-center">
