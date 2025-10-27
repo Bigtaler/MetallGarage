@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МеталлГараж - Производство металлических гаражей, хозблоков и складов в Беларуси</title>
+    <meta name="description" content="Производство металлических гаражей, хозблоков и складов из сэндвич-панелей в Минске. Собственное производство, низкие цены, быстрая установка. Гарантия 5 лет.">
+    <meta name="keywords" content="металлические гаражи, хозблоки, склады, сэндвич-панели, производство, Минск, Беларусь">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="#home">
+                <i class="fas fa-warehouse me-2"></i>МеталлГараж
+            </a>
+            
+            <div class="d-flex align-items-center order-lg-3">
+                <a href="tel:+375291234567" class="btn btn-outline-primary me-3">
+                    <i class="fas fa-phone me-1"></i>+375 (29) 123-45-67
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Производство металлических гаражей &amp; хозблоков
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Собственное производство в Минске. Изготавливаем металлические гаражи, хозблоки и склады из сэндвич-панелей любых размеров. Гарантия 5 лет.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#priceModal">
+                            <i class="fas fa-calculator me-2"></i>Узнать стоимость
+                        </button>
+                        <a href="tel:+375291234567" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-phone me-2"></i>Позвонить
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-form bg-white p-4 rounded-3 shadow">
+                        <h3 class="h4 mb-3">Рассчитать стоимость</h3>
+                        <form id="heroForm">
+                            <div class="mb-3">
+                                <select class="form-select" name="product" required>
+                                    <option value="">Выберите тип конструкции</option>
+                                    <option value="garage">Металлический гараж</option>
+                                    <option value="utility">Хозблок</option>
+                                    <option value="warehouse">Склад</option>
+                                    <option value="custom">Индивидуальный проект</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="length" placeholder="Длина (м)" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="width" placeholder="Ширина (м)" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control phone-mask" name="phone" placeholder="Ваш телефон" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-calculator me-2"></i>Рассчитать стоимость
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Почему выбирают нас</h2>
+                    <p class="lead">Более 10 лет производим качественные металлоконструкции для жителей Беларуси</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="advantage-card text-center h-100">
+                        <div class="advantage-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h4>Собственное производство</h4>
+                        <p>Изготавливаем на собственном заводе в Минске. Контролируем качество на каждом этапе.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="advantage-card text-center h-100">
+                        <div class="advantage-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4>Низкая стоимость</h4>
+                        <p>Работаем без посредников — цены от производителя на 20-30% ниже рыночных.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="advantage-card text-center h-100">
+                        <div class="advantage-icon">
+                            <i class="fas fa-ruler-combined"></i>
+                        </div>
+                        <h4>Любые размеры</h4>
+                        <p>Производим типовые конструкции и изготавливаем по индивидуальным размерам.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="advantage-card text-center h-100">
+                        <div class="advantage-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Быстрая установка</h4>
+                        <p>Срок изготовления 3-5 дней. Монтаж гаража или хозблока — 1-2 дня.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="advantage-card text-center h-100">
+                        <div class="advantage-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4>Доставка и монтаж</h4>
+                        <p>Бесплатная доставка по Минску и области. Профессиональный монтаж с гарантией.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="advantage-card text-center h-100">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Гарантия 5 лет</h4>
+                        <p>Официальная гарантия на все металлоконструкции с сервисным обслуживанием.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    
+<section id="catalog" class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Каталог продукции</h2>
+        <p class="lead">Хозяйственные блоки из оцинкованного профиля</p>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6">
+        <div class="product-card h-100">
+          <div class="product-image"></div>
+          <div class="product-body">
+            <h4>Хоз блок 3,50 × 3,50 × 2,0 м</h4>
+            <div class="product-specs">
+              <div class="spec"><i class="fas fa-tools"></i><span>Каркас — труба 20×20 мм, оцинкованная</span></div>
+              <div class="spec"><i class="fas fa-th-large"></i><span>Краб-система соединений (оцинкованная)</span></div>
+              <div class="spec"><i class="fas fa-layer-group"></i><span>Профлист 0,35 мм, окрашенный (цвет на выбор)</span></div>
+              <div class="spec"><i class="far fa-clock"></i><span>Срок изготовления: 7–10 дней</span></div>
+            </div>
+            <div class="product-price">от 2 980 BYN</div>
+            <button class="btn btn-primary w-100" data-product="Хоз блок 3,50 × 3,50 × 2,0 м" data-bs-toggle="modal" data-bs-target="#priceModal">
+              <i class="fas fa-calculator me-2"></i>Узнать стоимость
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="product-card h-100">
+          <div class="product-image"></div>
+          <div class="product-body">
+            <h4>Хоз блок 2,30 × 3,50 × 2,0 м</h4>
+            <div class="product-specs">
+              <div class="spec"><i class="fas fa-tools"></i><span>Каркас — труба 20×20 мм, оцинкованная</span></div>
+              <div class="spec"><i class="fas fa-th-large"></i><span>Краб-система соединений (оцинкованная)</span></div>
+              <div class="spec"><i class="fas fa-layer-group"></i><span>Профлист 0,35 мм, окрашенный (цвет на выбор)</span></div>
+              <div class="spec"><i class="far fa-clock"></i><span>Срок изготовления: 7–10 дней</span></div>
+            </div>
+            <div class="product-price">от 2 680 BYN</div>
+            <button class="btn btn-primary w-100" data-product="Хоз блок 2,30 × 3,50 × 2,0 м" data-bs-toggle="modal" data-bs-target="#priceModal">
+              <i class="fas fa-calculator me-2"></i>Узнать стоимость
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="product-card h-100">
+          <div class="product-image"></div>
+          <div class="product-body">
+            <h4>Хоз блок 1,20 × 2,30 × 2,0 м</h4>
+            <div class="product-specs">
+              <div class="spec"><i class="fas fa-tools"></i><span>Каркас — труба 20×20 мм, оцинкованная</span></div>
+              <div class="spec"><i class="fas fa-th-large"></i><span>Краб-система соединений (оцинкованная)</span></div>
+              <div class="spec"><i class="fas fa-layer-group"></i><span>Профлист 0,35 мм, окрашенный (цвет на выбор)</span></div>
+              <div class="spec"><i class="far fa-clock"></i><span>Срок изготовления: 7–10 дней</span></div>
+            </div>
+            <div class="product-price">2 000 BYN</div>
+            <button class="btn btn-primary w-100" data-product="Хоз блок 1,20 × 2,30 × 2,0 м" data-bs-toggle="modal" data-bs-target="#priceModal">
+              <i class="fas fa-calculator me-2"></i>Узнать стоимость
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">О компании МеталлГараж</h2>
+                    <p class="lead mb-4">Более 10 лет производим качественные металлические конструкции для жителей Беларуси.</p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-6">
+                            <div class="stat-card text-center">
+                                <h3 class="text-primary mb-1">1000+</h3>
+                                <p class="mb-0">Готовых объектов</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card text-center">
+                                <h3 class="text-primary mb-1">10+</h3>
+                                <p class="mb-0">Лет на рынке</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card text-center">
+                                <h3 class="text-primary mb-1">500+</h3>
+                                <p class="mb-0">Довольных клиентов</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card text-center">
+                                <h3 class="text-primary mb-1">5</h3>
+                                <p class="mb-0">Лет гарантии</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Собственное производство в Минске</li>
+                        <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Использование качественных материалов</li>
+                        <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Опытные монтажники</li>
+                        <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Индивидуальный подход к каждому клиенту</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image bg-light rounded-3 p-4 text-center">
+                        <i class="fas fa-industry display-1 text-primary mb-3"></i>
+                        <h4>Современное производство</h4>
+                        <p>Завод оснащён современным оборудованием для производства металлоконструкций любой сложности.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Часто задаваемые вопросы</h2>
+                    <p class="lead">Ответы на популярные вопросы о наших услугах</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Какой срок изготовления металлического гаража?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Типовой гараж 6×4 м изготавливается за 3-5 дней. Индивидуальный проект — за 5-7 дней. Монтаж занимает 1-2 дня.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Нужен ли фундамент для хозблока?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Для хозблока и гаража достаточно ровной площадки с утрамбованным грунтом. Для складов из сэндвич-панелей рекомендуется бетонная плита.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Можно ли изменить размеры типовой конструкции?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Да, мы изготавливаем по индивидуальным размерам. Оставьте заявку, и мы рассчитаем стоимость.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Какая гарантия на металлоконструкции?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Даём гарантию 5 лет на все металлические гаражи, хозблоки и склады. Гарантия распространяется на каркас, обшивку, двери, ворота.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Сколько стоит доставка и монтаж?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Доставка и монтаж включены в стоимость "под ключ" для Минска и до 30 км от МКАД. За пределы 30 км: 2 BYN/км.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Контакты</h2>
+                    <p class="lead">Свяжитесь с нами удобным способом</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Наши контакты</h4>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>Телефон</h6>
+                                <a href="tel:+375291234567">+375 (29) 123-45-67</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>Email</h6>
+                                <a href="mailto:info@metalgarage.by">info@metalgarage.by</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>Адрес</h6>
+                                <p>г. Минск, д. Колядичи,<br>ул. Производственная, 35</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>Режим работы</h6>
+                                <p>Пн-Пт: 8:00-18:00<br>Сб: 9:00-15:00<br>Вс: выходной</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h6>УНП</h6>
+                                <p>123456789</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form bg-light p-4 rounded-3">
+                        <h4 class="mb-4">Оставить заявку</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control phone-mask" name="phone" placeholder="Ваш телефон" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" name="service" required>
+                                    <option value="">Выберите услугу</option>
+                                    <option value="garage">Металлический гараж</option>
+                                    <option value="utility">Хозблок</option>
+                                    <option value="warehouse">Склад</option>
+                                    <option value="consultation">Консультация</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" name="message" rows="4" placeholder="Дополнительная информация"></textarea>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="privacy" required>
+                                <label class="form-check-label" for="privacy">
+                                    Согласен на обработку персональных данных
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5><i class="fas fa-warehouse me-2"></i>МеталлГараж</h5>
+                    <p class="mb-3">Производство металлических гаражей, хозблоков и складов в Беларуси</p>
+                    <div class="d-flex gap-3">
+                        <a href="tel:+375291234567" class="text-light">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:info@metalgarage.by" class="text-light">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="mb-1">г. Минск, д. Колядичи, ул. Производственная, 35</p>
+                    <p class="mb-1">Пн-Пт: 8:00-18:00, Сб: 9:00-15:00</p>
+                    <p class="mb-0">УНП: 123456789</p>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2024 МеталлГараж. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="btn btn-primary btn-floating" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Price Calculation Modal -->
+    <div class="modal fade" id="priceModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Рассчитать стоимость</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="priceForm">
+                        <div class="mb-3">
+                            <label class="form-label">Тип конструкции</label>
+                            <input type="text" class="form-control" name="product" readonly>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Длина (м)</label>
+                                    <input type="number" class="form-control" name="length" step="0.1" min="1" required>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Ширина (м)</label>
+                                    <input type="number" class="form-control" name="width" step="0.1" min="1" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Высота (м)</label>
+                            <input type="number" class="form-control" name="height" step="0.1" min="1" value="2.5" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Телефон</label>
+                            <input type="text" class="form-control phone-mask" name="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email (необязательно)</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Комментарий</label>
+                            <textarea class="form-control" name="comment" rows="3" placeholder="Дополнительные требования"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="modalPrivacy" required>
+                            <label class="form-check-label" for="modalPrivacy">
+                                Согласен на обработку персональных данных
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="submit" form="priceForm" class="btn btn-primary">
+                        <i class="fas fa-calculator me-2"></i>Рассчитать
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body text-center py-4">
+                    <i class="fas fa-check-circle text-success display-4 mb-3"></i>
+                    <h5>Заявка отправлена!</h5>
+                    <p class="mb-0">Наш менеджер свяжется с вами в течение 30 минут</p>
+                </div>
+                <div class="modal-footer justify-content-center border-0">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Отлично</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
