@@ -7,6 +7,12 @@
     <meta name="description" content="Производство металлических гаражей, хозблоков и складов из сэндвич-панелей в Минске. Собственное производство, низкие цены, быстрая установка. Гарантия 5 лет.">
     <meta name="keywords" content="металлические гаражи, хозблоки, склады, сэндвич-панели, производство, Минск, Беларусь">
     
+    <!-- Open Graph / Contacts -->
+    <meta property="og:site_name" content="МеталлГараж">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="МеталлГараж">
+    <meta property="og:description" content="Свяжитесь с нами: +375 (44) 538-63-00, info@deepmall.online">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -15,7 +21,28 @@
     <link rel="stylesheet" href="style.css">
     <style>
       .product-image img{width:100%;height:220px;object-fit:cover;border-radius:8px}
+      .product-image.bg{min-height:220px;background-size:cover;background-position:center;border-radius:8px}
+      .requisites p{margin-bottom:.4rem}
     </style>
+    
+    <!-- JSON-LD Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "МеталлГараж",
+      "url": "https://example.com/",
+      "email": "info@deepmall.online",
+      "telephone": "+375445386300",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BY",
+        "postalCode": "220055",
+        "addressLocality": "Минск",
+        "streetAddress": "ул. Каменногорская, д. 47, оф.45"
+      }
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -26,8 +53,8 @@
             </a>
             
             <div class="d-flex align-items-center order-lg-3">
-                <a href="tel:+375291234567" class="btn btn-outline-primary me-3">
-                    <i class="fas fa-phone me-1"></i>+375 (29) 123-45-67
+                <a href="tel:+375445386300" class="btn btn-outline-primary me-3">
+                    <i class="fas fa-phone me-1"></i>+375 (44) 538-63-00
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -68,7 +95,7 @@
                         <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#priceModal">
                             <i class="fas fa-calculator me-2"></i>Узнать стоимость
                         </button>
-                        <a href="tel:+375291234567" class="btn btn-outline-light btn-lg">
+                        <a href="tel:+375445386300" class="btn btn-outline-light btn-lg">
                             <i class="fas fa-phone me-2"></i>Позвонить
                         </a>
                     </div>
@@ -99,7 +126,7 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control phone-mask" name="phone" placeholder="Ваш телефон" required>
+                                <input type="text" class="form-control phone-mask" name="phone" placeholder="Ваш телефон" required value="+375 (44) 538-63-00">
                             </div>
                             <div class="mb-3">
                                 <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
@@ -145,6 +172,15 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="advantage-card text-center h-100">
                         <div class="advantage-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h4>Доставка и монтаж</h4>
+                        <p>до 30 км от МКАД — бесплатно; за пределами — 4 BYN/км.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="advantage-card text-center h-100">
+                        <div class="advantage-icon">
                             <i class="fas fa-ruler-combined"></i>
                         </div>
                         <h4>Любые размеры</h4>
@@ -158,15 +194,6 @@
                         </div>
                         <h4>Быстрая установка</h4>
                         <p>Срок изготовления 3-5 дней. Монтаж гаража или хозблока — 1-2 дня.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="advantage-card text-center h-100">
-                        <div class="advantage-icon">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <h4>Доставка и монтаж</h4>
-                        <p>Бесплатная доставка по Минску и области. Профессиональный монтаж с гарантией.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -194,80 +221,23 @@
     </div>
 
     <div class="row g-4">
-      <!-- Новый товар: Гараж дачный 6х4 м -->
+      <!-- Карточки существующие ... -->
+
+      <!-- Новая карточка: Гараж дачный 6×4 м -->
       <div class="col-lg-4 col-md-6">
         <div class="product-card h-100">
-          <div class="product-image">
-            <img src="garage-6x4.jpg" alt="Гараж дачный 6х4 м">
-          </div>
+          <div class="product-image bg" style="background-image:url('assets/img/garage-6x4.jpg');"></div>
           <div class="product-body">
             <h4>Гараж дачный 6×4 м</h4>
             <div class="product-specs">
               <div class="spec"><i class="fas fa-tools"></i><span>Каркас стен: профиль стальной 40×40×2 мм, грунтованный</span></div>
-              <div class="spec"><i class="fas fa-layer-group"></i><span>Зашивка стен: профнастил П‑20; 0,45 мм, оцинкованный</span></div>
-              <div class="spec"><i class="fas fa-border-top-left"></i><span>Каркас перекрытия: профиль стальной 40×40×2 мм, грунтованный</span></div>
-              <div class="spec"><i class="fas fa-grip-lines"></i><span>Зашивка перекрытия: профнастил С35‑845; 0,45 мм, оцинкованный</span></div>
-              <div class="spec"><i class="fas fa-door-open"></i><span>Ворота: распашные с замком и засовами, профнастил С‑20; 0,45 мм, оцинкованный</span></div>
+              <div class="spec"><i class="fas fa-layer-group"></i><span>Зашивка стен (наружная): профнастил П-20; 0,45 мм, оцинкованный</span></div>
+              <div class="spec"><i class="fas fa-border-top"></i><span>Каркас перекрытия: профиль стальной 40×40×2 мм, грунтованный</span></div>
+              <div class="spec"><i class="fas fa-border-all"></i><span>Зашивка перекрытия (наружная): профнастил С35-845; 0,45 мм, оцинкованный</span></div>
+              <div class="spec"><i class="fas fa-door-open"></i><span>Ворота: распашные с замком и засовами</span></div>
             </div>
-            <div class="product-price">7 500 руб.</div>
+            <div class="product-price">от 8 500 BYN</div>
             <button class="btn btn-primary w-100" data-product="Гараж дачный 6×4 м" data-bs-toggle="modal" data-bs-target="#priceModal">
-              <i class="fas fa-calculator me-2"></i>Узнать стоимость
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="product-card h-100">
-          <div class="product-image"></div>
-          <div class="product-body">
-            <h4>Хоз блок 3,50 × 3,50 × 2,0 м</h4>
-            <div class="product-specs">
-              <div class="spec"><i class="fas fa-tools"></i><span>Каркас — труба 20×20 мм, оцинкованная</span></div>
-              <div class="spec"><i class="fas fa-th-large"></i><span>Краб-система соединений (оцинкованная)</span></div>
-              <div class="spec"><i class="fas fa-layer-group"></i><span>Профлист 0,35 мм, окрашенный (цвет на выбор)</span></div>
-              <div class="spec"><i class="far fa-clock"></i><span>Срок изготовления: 7–10 дней</span></div>
-            </div>
-            <div class="product-price">от 2 980 BYN</div>
-            <button class="btn btn-primary w-100" data-product="Хоз блок 3,50 × 3,50 × 2,0 м" data-bs-toggle="modal" data-bs-target="#priceModal">
-              <i class="fas fa-calculator me-2"></i>Узнать стоимость
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="product-card h-100">
-          <div class="product-image"></div>
-          <div class="product-body">
-            <h4>Хоз блок 2,30 × 3,50 × 2,0 м</h4>
-            <div class="product-specs">
-              <div class="spec"><i class="fas fa-tools"></i><span>Каркас — труба 20×20 мм, оцинкованная</span></div>
-              <div class="spec"><i class="fas fa-th-large"></i><span>Краб-система соединений (оцинкованная)</span></div>
-              <div class="spec"><i class="fas fa-layer-group"></i><span>Профлист 0,35 мм, окрашенный (цвет на выбор)</span></div>
-              <div class="spec"><i class="far fa-clock"></i><span>Срок изготовления: 7–10 дней</span></div>
-            </div>
-            <div class="product-price">от 2 680 BYN</div>
-            <button class="btn btn-primary w-100" data-product="Хоз блок 2,30 × 3,50 × 2,0 м" data-bs-toggle="modal" data-bs-target="#priceModal">
-              <i class="fas fa-calculator me-2"></i>Узнать стоимость
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6">
-        <div class="product-card h-100">
-          <div class="product-image"></div>
-          <div class="product-body">
-            <h4>Хоз блок 1,20 × 2,30 × 2,0 м</h4>
-            <div class="product-specs">
-              <div class="spec"><i class="fas fa-tools"></i><span>Каркас — труба 20×20 мм, оцинкованная</span></div>
-              <div class="spec"><i class="fas fa-th-large"></i><span>Краб-система соединений (оцинкованная)</span></div>
-              <div class="spec"><i class="fas fa-layer-group"></i><span>Профлист 0,35 мм, окрашенный (цвет на выбор)</span></div>
-              <div class="spec"><i class="far fa-clock"></i><span>Срок изготовления: 7–10 дней</span></div>
-            </div>
-            <div class="product-price">2 000 BYN</div>
-            <button class="btn btn-primary w-100" data-product="Хоз блок 1,20 × 2,30 × 2,0 м" data-bs-toggle="modal" data-bs-target="#priceModal">
               <i class="fas fa-calculator me-2"></i>Узнать стоимость
             </button>
           </div>
@@ -276,7 +246,7 @@
     </div>
   </div>
 </section>
-<!-- Остальной код без изменений ниже -->
+
 <section id="about" class="py-5">
         <div class="container">
             <div class="row align-items-center">
@@ -365,18 +335,6 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    Можно ли изменить размеры типовой конструкции?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Да, мы изготавливаем по индивидуальным размерам. Оставьте заявку, и мы рассчитаем стоимость.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
                                     Какая гарантия на металлоконструкции?
                                 </button>
@@ -395,7 +353,7 @@
                             </h2>
                             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Доставка и монтаж включены в стоимость "под ключ" для Минска и до 30 км от МКАД. За пределы 30 км: 2 BYN/км.
+                                    Доставка и монтаж «под ключ» до 30 км от МКАД — бесплатно. За пределами 30 км — 4 BYN/км.
                                 </div>
                             </div>
                         </div>
@@ -424,7 +382,7 @@
                             </div>
                             <div class="contact-details">
                                 <h6>Телефон</h6>
-                                <a href="tel:+375291234567">+375 (29) 123-45-67</a>
+                                <a href="tel:+375445386300">+375 (44) 538-63-00</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -433,7 +391,7 @@
                             </div>
                             <div class="contact-details">
                                 <h6>Email</h6>
-                                <a href="mailto:info@metalgarage.by">info@metalgarage.by</a>
+                                <a href="mailto:info@deepmall.online">info@deepmall.online</a>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -441,8 +399,8 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-details">
-                                <h6>Адрес</h6>
-                                <p>г. Минск, д. Колядичи,<br>ул. Производственная, 35</p>
+                                <h6>Юридический адрес</h6>
+                                <p>Республика Беларусь, 220055, г. Минск, ул. Каменногорская, д. 47, оф.45</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -452,15 +410,6 @@
                             <div class="contact-details">
                                 <h6>Режим работы</h6>
                                 <p>Пн-Пт: 8:00-18:00<br>Сб: 9:00-15:00<br>Вс: выходной</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <i class="fas fa-building"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h6>УНП</h6>
-                                <p>123456789</p>
                             </div>
                         </div>
                     </div>
@@ -473,10 +422,10 @@
                                 <input type="text" class="form-control" name="name" placeholder="Ваше имя" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control phone-mask" name="phone" placeholder="Ваш телефон" required>
+                                <input type="text" class="form-control phone-mask" name="phone" placeholder="Ваш телефон" required value="+375 (44) 538-63-00">
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" name="email" placeholder="Email">
+                                <input type="email" class="form-control" name="email" placeholder="Email" value="info@deepmall.online">
                             </div>
                             <div class="mb-3">
                                 <select class="form-select" name="service" required>
@@ -515,18 +464,29 @@
                     <h5><i class="fas fa-warehouse me-2"></i>МеталлГараж</h5>
                     <p class="mb-3">Производство металлических гаражей, хозблоков и складов в Беларуси</p>
                     <div class="d-flex gap-3">
-                        <a href="tel:+375291234567" class="text-light">
+                        <a href="tel:+375445386300" class="text-light">
                             <i class="fas fa-phone"></i>
                         </a>
-                        <a href="mailto:info@metalgarage.by" class="text-light">
+                        <a href="mailto:info@deepmall.online" class="text-light">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-lg-end">
-                    <p class="mb-1">г. Минск, д. Колядичи, ул. Производственная, 35</p>
-                    <p class="mb-1">Пн-Пт: 8:00-18:00, Сб: 9:00-15:00</p>
-                    <p class="mb-0">УНП: 123456789</p>
+                    <div class="requisites text-start text-lg-end">
+<p>ООО «ДИП МОЛЛ»</p>
+<p>Юридический адрес: Республика Беларусь, 220055, г. Минск, ул. Каменногорская, д. 47, оф.45</p>
+<p>УНП: 193782799 ОКЭД 47910</p>
+<p>Текущий (расчетный):</p>
+<p>BY30 MТBК 3012 0001 0933 0013 4167</p>
+<p>в BYN в ЗАО «МТБанк», БИК: МTBKBY22</p>
+<p>Адрес: 220007, г. Минск, ул. Толстого, д. 10</p>
+<p><a href="mailto:info@deepmall.online">info@deepmall.online</a></p>
+<p>Директор – Азаренко Павел Владимирович,</p>
+<p>действует на основании Устава</p>
+<p>Почтовый адрес: г. Минск., ул. Масюковщина,</p>
+<p>д. 44, офис. 31, 220124</p>
+                    </div>
                 </div>
             </div>
             <hr class="my-3">
@@ -581,11 +541,11 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Телефон</label>
-                            <input type="text" class="form-control phone-mask" name="phone" required>
+                            <input type="text" class="form-control phone-mask" name="phone" required value="+375 (44) 538-63-00">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Email (необязательно)</label>
-                            <input type="email" class="form-control" name="email">
+                            <input type="email" class="form-control" name="email" value="info@deepmall.online">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Комментарий</label>
